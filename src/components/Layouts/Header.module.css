@@ -1,0 +1,275 @@
+.main-header {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #ff0062;
+  padding: 0 1.5rem;
+
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* SIDE MENU TOGGLE BUTTON */
+.toggle {
+  background: transparent;
+  width: 24px;
+  padding: 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.toggle span {
+  width: 100%;
+  height: 2px;
+  background: white;
+  display: block;
+
+  margin: 6px 0;
+}
+
+/* BRAND */
+.brand {
+  height: 2.5rem;
+  width: 3.5rem;
+  margin: 0 auto;
+}
+
+.brand img {
+  height: 100%;
+  width: 100%;
+}
+
+/* MAIN NAV */
+.main-header__nav {
+  /* height: 100%; */
+  /* width: 100%; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: flex-end; */
+}
+
+.main-header__item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  /* border: solid 1px blue; */
+}
+
+.main-header__item {
+  margin: 0 0.75rem;
+  padding: 0;
+
+  /* border: solid 1px gold; */
+}
+
+.main-header__item .container {
+  font: inherit;
+  color: white;
+  cursor: pointer;
+  background: transparent;
+}
+
+.main-header__item.icon {
+  margin: 0;
+}
+
+.main-header__item:not(.icon.mobile) {
+  display: none;
+}
+
+.main-header__item a {
+  font: inherit;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.main-header__item a:focus,
+.main-header__item button:focus {
+  outline: none;
+}
+
+/* Transitional underline for menu captions */
+.main-header__item:not(.icon) > a {
+  position: relative;
+}
+
+.main-header__item:not(.icon) > a::before {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  content: '';
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  transition: width 0.3s ease-out;
+}
+
+.main-header__item:hover > a::before,
+.main-header__item:active > a::before,
+.main-header__item.active > a::before {
+  width: 100%;
+}
+
+.main-header__item > a.active::before {
+  width: 100%;
+}
+
+/*  Icons */
+.main-header__icon {
+  display: flex;
+
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.75rem;
+}
+
+.dropdown__icon {
+  display: flex;
+  vertical-align: middle;
+
+  width: 0.9rem;
+  height: 0.9rem;
+
+  margin-right: 0.5rem;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 0.75rem;
+  padding-top: 1rem;
+  display: none;
+}
+
+.dropdown-menu--open {
+  display: block;
+}
+
+.right-0 {
+  right: 0;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  width: 12.5rem;
+
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.dropdown-menu__item {
+  margin: 0.25rem 0;
+}
+
+.dropdown-menu__item .container {
+  font-size: 15px;
+  color: #191919;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu__item a {
+  font: inherit;
+  font-size: 15px;
+  text-decoration: none;
+  color: #191919;
+  /* color: #777777; */
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 2rem;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* logout -------------------------------------*/
+/* .dropdown-menu__item.logout-action .container {
+  padding: 0;
+  padding-left: 2rem;
+  width: 100%;
+}
+
+.dropdown-menu__item.logout-action form {
+  border: solid 1px cyan;
+  width: 80%;
+}
+
+.dropdown-menu__item.logout-action button {
+  font: inherit;
+  padding: 0.5rem 2rem;
+  padding-left: 0;
+  border: none;
+  background: inherit;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+} 
+  .dropdown-menu__item.logout-action:hover button
+*/
+/* ------------------------------------------- */
+
+.dropdown-menu__item a:hover,
+.dropdown-menu__item a.active,
+.dropdown-menu__item .container:hover,
+.dropdown-menu__item .container.active {
+  background: #ff0062;
+  color: white;
+  border-radius: 3px;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    grid-template-columns: 10% 90%;
+  }
+
+  .main-header__item:not(.icon.mobile) {
+    display: block;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .brand {
+    margin: 0;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .backdrop {
+    display: none;
+  }
+}

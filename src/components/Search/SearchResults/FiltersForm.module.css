@@ -1,0 +1,113 @@
+.btn {
+  font: inherit;
+  background: transparent;
+  color: #444;
+  border: none;
+  margin: 0;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.filters-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+
+  padding: 1rem;
+  background-color: white;
+  overflow: auto;
+
+  display: none;
+}
+
+.filter-form--action {
+  position: sticky;
+  bottom: 0.5rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.open {
+  display: block;
+}
+
+.filters-header {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: normal;
+
+  position: relative;
+}
+
+.filters-header .btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.filters-header .btn .icon {
+  display: inline-block;
+}
+
+/*  */
+
+.filters__container {
+  max-height: 7rem;
+  overflow: auto;
+}
+
+.filter__price input {
+  font: inherit;
+  max-width: 5rem;
+  height: 2rem;
+  border: solid 1px lightgray;
+  border-radius: 4px;
+  text-align: right;
+}
+
+.filter__price input:focus {
+  outline: none;
+}
+
+.filter-tags li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.filter-tags li button,
+.filter-tags li .icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .filters-form {
+    position: static;
+    display: block;
+    max-width: 16rem;
+    z-index: 9;
+    height: 100%;
+  }
+
+  .filters-header {
+    display: none;
+  }
+
+  .filter-form--action {
+    display: none;
+  }
+}

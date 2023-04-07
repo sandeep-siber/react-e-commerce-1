@@ -1,0 +1,29 @@
+.shipping h3,
+.shipping p {
+  margin: 0.25rem 0;
+  font-size: 16px;
+}
+
+.account,
+.ship-to {
+  margin-left: 0.5rem;
+}
+
+.address {
+  padding: 1rem;
+}
+
+.back {
+  border: none;
+  background-color: inherit;
+  color: #797979;
+
+  font: inherit;
+  font-size: small;
+  cursor: pointer;
+}
+
+.shipping__actions > * {
+  width: 100%;
+  margin-top: 1rem;
+}

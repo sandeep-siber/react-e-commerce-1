@@ -1,0 +1,13 @@
+/* Breadcrumb */
+.breadcrumb {
+  margin-top: 3.5rem;
+  overflow: hidden;
+}
+
+.breadcrumb p {
+  /* margin-bottom: 1rem; */
+  padding: 0.25rem 1.5rem;
+  background-color: rgb(252, 228, 228);
+  color: #444;
+  margin: 0;
+}

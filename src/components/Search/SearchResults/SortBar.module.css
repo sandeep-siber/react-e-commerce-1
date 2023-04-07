@@ -1,0 +1,35 @@
+.sortby-bar {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sortby-bar button {
+  display: flex;
+  align-items: center;
+}
+
+.sortby-bar button .icon {
+  margin-left: 0.5rem;
+}
+
+.sortby-bar__dropdown {
+  font: inherit;
+  border: solid 1px silver;
+
+  display: none;
+}
+
+.sortby-bar__dropdown:focus {
+  outline: none;
+}
+
+@media (min-width: 1024px) {
+  .sortby-bar button {
+    display: none;
+  }
+
+  .sortby-bar__dropdown {
+    display: block;
+  }
+}

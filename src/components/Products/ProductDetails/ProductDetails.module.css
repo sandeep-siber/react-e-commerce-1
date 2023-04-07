@@ -1,0 +1,65 @@
+.product-details {
+  width: 90%;
+  max-width: 480px;
+  margin: auto;
+  text-align: center;
+}
+
+.product-details h1,
+.product-details h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.product-details p {
+  margin: 0;
+  margin: 0.5rem;
+}
+
+.product-image {
+  height: 12rem;
+}
+
+.product-image img {
+  height: 100%;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
+}
+
+.product-actions input {
+  font: inherit;
+  font-weight: bold;
+  padding: 0.5rem;
+  width: 4rem;
+  border: 1px solid #a1a1a1;
+  text-align: center;
+}
+
+.product-actions input:focus {
+  outline-color: pink;
+}
+
+.wishlist {
+  display: block;
+  font: inherit;
+  background-color: inherit;
+  border: none;
+  color: orange;
+  cursor: pointer;
+  margin: 0.5rem auto;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+}
+
+/* .wishlist span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+} */

@@ -1,0 +1,57 @@
+.control {
+  margin-bottom: 0.25rem;
+}
+
+.control label {
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.control input {
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.control p {
+  margin: 0;
+  font-size: small;
+}
+
+.invalid label {
+  color: #ca3e51;
+}
+
+.invalid input {
+  border-color: #aa0b20;
+  background-color: #ffeff1;
+}
+
+.actions .back {
+  border: none;
+  background-color: inherit;
+  color: #797979;
+
+  font: inherit;
+  font-size: small;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.actions .back .icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.actions .back:hover {
+  color: #444;
+}

@@ -1,0 +1,21 @@
+.footer {
+  background-color: lightgray;
+  margin-top: 4rem;
+}
+
+.accordian {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: lightgray;
+  padding: 0.5rem 1rem;
+}
+
+.subscribe-form {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .subscribe-form {
+    display: block;
+  }
+}

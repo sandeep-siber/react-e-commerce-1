@@ -1,0 +1,32 @@
+.sorting {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.sorting select {
+  font: inherit;
+  color: #444;
+  border: silver 2px solid;
+  padding: 1px;
+}
+
+.sorting select:focus {
+  outline-color: lightgray;
+}
+
+.products-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+/* .products-loading,
+.products-error {
+  text-align: center;
+  color: red;
+} */

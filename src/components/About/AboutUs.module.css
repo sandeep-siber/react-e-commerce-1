@@ -1,0 +1,22 @@
+/* main {
+  
+} */
+
+.about-us {
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  width: 90%;
+  max-width: 576px;
+  margin: auto;
+  color: #444;
+}
+
+.about-us__image {
+  max-width: 100%;
+  margin: auto;
+}
+
+.about-us__image img {
+  width: 100%;
+}

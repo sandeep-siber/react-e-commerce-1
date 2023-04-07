@@ -1,0 +1,105 @@
+.product-form {
+  max-width: 20rem;
+  margin: 2rem auto;
+  display: block;
+}
+
+.form-control {
+  margin: 0.5rem 0;
+}
+
+.form-control label,
+.form-control input,
+.form-control select,
+.form-control textarea {
+  display: block;
+  width: 100%;
+  font: inherit;
+  padding: 2px 4px;
+}
+
+.form-control input {
+  border: 1px solid #a1a1a1;
+  font: inherit;
+  border-radius: 2px;
+}
+
+.form-control input:focus,
+.form-control select:focus,
+.form-control textarea:focus {
+  outline-color: #ae82cc;
+}
+
+.form-control input[type='checkbox'] {
+  display: inline-block;
+  width: 2rem;
+}
+
+/* .form-control.invalid p {
+  color: red;
+} */
+
+/* .form-control.invalid input {
+  border: solid 1px;
+} */
+
+.invalid label {
+  color: #ca3e51;
+}
+
+.invalid input {
+  border-color: #aa0b20;
+  background-color: #ffeff1;
+}
+
+.form-control p {
+  margin: 0;
+}
+
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.actions button {
+  cursor: pointer;
+  font: inherit;
+  color: white;
+  background-color: #9f5ccc;
+  border: 1px solid #9f5ccc;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+}
+
+.actions button:hover {
+  background-color: #873abb;
+  border-color: #873abb;
+}
+
+.actions button:disabled {
+  background-color: gray;
+  border-color: gray;
+}
+
+.actions button:focus {
+  outline: #9f5ccc solid 2px;
+}
+
+.actions button:nth-child(2):focus {
+  outline: none;
+}
+
+.actions .toggle {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: #9f5ccc;
+  border: none;
+  padding: 0.15rem 1.5rem;
+}
+
+.actions .toggle:hover {
+  background-color: transparent;
+  color: #ae82cc;
+}

@@ -1,0 +1,119 @@
+.wrapper {
+  max-width: 20rem;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.auth {
+  display: block;
+}
+
+.auth h1 {
+  color: #444;
+  text-align: center;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.auth .errors {
+  margin: 1rem 0 0 0;
+  text-align: center;
+  font-size: small;
+  background-color: rgb(240, 237, 237);
+  color: #444;
+}
+
+.form-control {
+  margin: 1rem 0;
+}
+
+.form-control label,
+.form-control input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.25rem;
+}
+
+.form-control input {
+  border: 1px solid #a1a1a1;
+  font: inherit;
+  border-radius: 2px;
+}
+
+.form-control input:focus {
+  outline-color: #ae82cc;
+}
+
+/* .form-control.invalid p {
+  color: red;
+} */
+
+/* .form-control.invalid input {
+  border: solid 1px;
+} */
+
+.invalid label {
+  color: #ca3e51;
+}
+
+.invalid input {
+  border-color: #aa0b20;
+  background-color: #ffeff1;
+}
+
+.form-control p {
+  margin: 0;
+}
+
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .actions a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #9f5ccc;
+  outline: none;
+} */
+
+.actions button {
+  cursor: pointer;
+  font: inherit;
+  color: white;
+  background-color: #9f5ccc;
+  border: 1px solid #9f5ccc;
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+}
+
+.actions button:hover {
+  background-color: #873abb;
+  border-color: #873abb;
+}
+
+.actions button:disabled {
+  background-color: gray;
+  border-color: gray;
+}
+
+.actions button:focus {
+  outline: #9f5ccc solid 2px;
+}
+
+.actions .toggle {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: #9f5ccc;
+  border: none;
+  padding: 0.15rem 1.5rem;
+  outline: none;
+  text-decoration: none;
+}
+
+.actions .toggle:hover {
+  background-color: transparent;
+  color: #ae82cc;
+}

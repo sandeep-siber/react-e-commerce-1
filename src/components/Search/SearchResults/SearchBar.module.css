@@ -1,0 +1,44 @@
+.search-bar {
+  height: 2.5rem;
+  max-width: 480px;
+  margin: auto;
+
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  overflow: hidden;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.search-bar input,
+.search-bar button {
+  font: inherit;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: #444;
+
+  padding: 8px;
+}
+
+.search-bar input {
+  flex: 0 0 80%;
+}
+.search-bar button {
+  flex: 0 0 10%;
+}
+
+.search-bar button:nth-of-type(2) {
+  background-color: lightgray;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,77 @@
+/* 1920x700 */
+
+.showcase-fade {
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+}
+
+.showcase-fade .check {
+  position: absolute;
+
+  top: 0;
+  right: 4px;
+  z-index: 3;
+}
+.showcase-fade .check.two {
+  top: 1rem;
+}
+.showcase-fade .check.three {
+  top: 2rem;
+}
+.showcase-fade .check.four {
+  top: 3rem;
+}
+
+.images {
+  position: relative;
+}
+
+.image {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.image-2,
+.image-3,
+.image-4 {
+  position: absolute;
+  top: 0;
+}
+
+.check.one:checked ~ .images .image-1 {
+  opacity: 1;
+}
+.check.two:checked ~ .images .image-2 {
+  opacity: 1;
+  z-index: 1;
+}
+.check.three:checked ~ .images .image-3 {
+  opacity: 1;
+  z-index: 1;
+}
+.check.four:checked ~ .images .image-4 {
+  opacity: 1;
+  z-index: 1;
+}
+
+/*  */
+.order-now {
+  position: absolute;
+  top: 5rem;
+  right: 0.5rem;
+  z-index: 3;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 1.5rem;
+  padding: 8px 24px;
+  font-size: large;
+  color: black;
+
+  transition: all 0.5s ease-in;
+}
+
+.image .order-now:hover {
+  background-color: gray;
+}

@@ -1,0 +1,185 @@
+.search {
+  height: 70vh; /* this is right dont rethink*/
+  overflow: hidden;
+}
+
+.search__input {
+  margin-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
+  /* background-color: yellow; */
+}
+
+.search__input .container {
+  border: 2px solid lightgray;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+}
+
+.search__input input,
+.search__input button {
+  background-color: white;
+  color: #444;
+  border: none;
+  height: 2rem;
+
+  font: inherit;
+
+  transition: all 0.6s ease;
+}
+
+.search__input button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search__input input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0 8px;
+}
+
+.search__input input:focus {
+  outline: none;
+}
+
+.search__input button {
+  width: 2rem;
+}
+
+.search__input button:hover {
+  color: yellowgreen;
+  transform: scale(0.9);
+}
+/* --- */
+
+.result {
+  font-size: 15px;
+
+  height: calc(100% - 4.25rem);
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.search__keys {
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.search__keys li {
+  font-size: small;
+  color: #444;
+  padding: 4px 1rem 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.search__keys li:hover,
+.result__list li:hover {
+  background-color: #797979;
+  color: white;
+  cursor: pointer;
+}
+
+.search__keys .icon {
+  height: 0.8rem;
+  width: 0.8rem;
+
+  margin-right: 0.5rem;
+}
+
+.result__item {
+  padding: 0.5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.result__image {
+  height: 4rem;
+  width: 4rem;
+}
+
+.result__image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.result__item div {
+  margin: 0 0.5rem;
+}
+
+.result__item p {
+  margin: 0;
+}
+
+.result__item p:nth-child(2) {
+  color: red;
+}
+
+.result__badge {
+  font-size: small;
+  font-weight: bold;
+  color: green;
+  padding: 0 12px;
+  margin-left: 0.25rem;
+
+  border: 1px solid green;
+  border-radius: 15px;
+}
+
+.view-more {
+  max-width: 700px;
+  margin: auto;
+  background-color: darkgray;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+
+  display: none;
+}
+
+.view-more a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+
+  width: 1rem;
+  height: 1rem;
+}
+
+@media (min-width: 768px) {
+  .result {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .search__keys,
+  .result__list {
+    overflow: auto;
+  }
+
+  .search__keys {
+    background-color: lightgray;
+    width: 25%;
+  }
+
+  .result__list {
+    width: 75%;
+  }
+}

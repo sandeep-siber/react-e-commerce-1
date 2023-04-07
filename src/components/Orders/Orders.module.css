@@ -1,0 +1,88 @@
+.container {
+  width: 90%;
+  max-width: 25rem;
+  margin: auto;
+}
+
+.container h2 {
+  font: inherit;
+  font-weight: normal;
+  font-size: large;
+}
+.order {
+  margin-top: 1rem;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.75rem;
+  border-bottom: 1px solid gray;
+}
+
+.order-header h4 {
+  font-size: small;
+  font-weight: normal;
+  margin: 0;
+  margin-left: 6px;
+}
+
+.item {
+  font-size: small;
+
+  display: flex;
+  align-items: stretch;
+
+  border-bottom: 1px dotted gray;
+}
+
+.item__image {
+  /* height: 4rem; */
+  max-width: 4rem;
+}
+
+.item__image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.item p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.item div {
+  min-width: 5rem;
+  flex: 0 0 25%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+
+  /* border: solid 1px; */
+  padding: 4px;
+}
+
+.item .quantity {
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.item .quantity span {
+  margin-right: 4px;
+  font-weight: bold;
+}
+
+.order-footer p {
+  line-height: 1.2;
+  text-align: right;
+  padding: 0 1.25rem;
+  margin: 0;
+}
+
+.order-footer p span {
+  font-size: small;
+  border-bottom: 3px double gray;
+}

@@ -1,0 +1,18 @@
+.footer-panel {
+  background-color: darkgray;
+  padding: 2rem;
+}
+
+.footer-panel p {
+  margin: 0;
+  line-height: 1.5;
+  color: white;
+  text-align: center;
+  font-size: small;
+}
+
+@media (min-width: 768px) {
+  .footer-panel p {
+    text-align: left;
+  }
+}
